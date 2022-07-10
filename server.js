@@ -17,7 +17,9 @@ const sess = {
     resave: false,
     saveUnitialized: true,
     store: new SequelizeStore({
-        db: sequelize
+        db: sequelize,
+    resave: true,
+    saveUninitialized: true
     })
 };
 
